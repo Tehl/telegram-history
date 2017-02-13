@@ -99,8 +99,8 @@ namespace TelegramHistory
                     Utility.ClearCurrentConsoleLine();
                     Console.Write($"Processed {offset} messages");
 
-                    // sleep for 0.5s to avoid api spam
-                    System.Threading.Thread.Sleep(500);
+                    // sleep for 1s to avoid api spam
+                    System.Threading.Thread.Sleep(1000);
                 } while (receivedMessages == messagesPerPass);
 
                 Console.WriteLine();
